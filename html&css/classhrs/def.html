@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="i1"></p>
+    <p class="c1" id="i2"></p>
+
+    <p class="c1">Hello</p>
+    <p name="n1">Hello</p>
+    <p class="c1">Hello</p>
+    <p name="n1">Hello</p>
+    <p class="c1">Hello2</p>
+    <!-- Welcome 4th classname. it is available in 3rd index -->
+    <p>Hello</p>
+    <p class="c1">Hello</p>
+    <p name="n1">Hello</p>
+    <p class="c1">Hello</p>
+    <p>Hello</p>
+    <p name="n1" class="c1">Hello</p>
+    <p class="c1">Hello</p>
+    <p name="n1">Hello</p>
+
+    <button onclick="f1()"># of class as c1</button>
+    <button onclick="f2()"># of name as n1</button>
+    <button onclick="f3()"># of tag as p</button>
+    <button onclick="f4()">Modify content</button>
+    <script>
+      document.write("<h1>Document objects</h1> <br />");
+      document.write("Hi");
+      document.write("Hello <br/>");
+      document.writeln("Hi");
+      document.writeln("Hello <br />");
+
+      document.getElementById("i1").innerHTML = "<h1>Welcome</h1>";
+      document.getElementById("i2").innerText = "<h1>Welcome</h1>";
+
+      function f4() {
+        document.getElementsByClassName("c1")[3].innerHTML = "Welcome";
+      }
+      function f1() {
+        let total = document.getElementsByClassName("c1").length;
+        alert("No of tags having class name as c1:" + total);
+      }
+      function f2() {
+        let total = document.getElementsByName("n1").length;
+        alert("No of tags having name as n1:" + total);
+      }
+      function f3() {
+        let total = document.getElementsByTagName("p").length;
+        alert("No of tags having tag name as p:" + total);
+      }
+    </script>
+  </body>
+</html>

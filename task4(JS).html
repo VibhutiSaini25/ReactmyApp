@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+   
+    <button onclick="f1()">Show Date</button>
+    <p></p>
+  
+    <button onclick="f2()">Show Time</button>
+    <script>
+    function f1()
+    {
+        var today = new Date();
+        var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+        document.write(date);
+        
+
+    }
+    function f2()
+    {
+        
+
+var today = new Date();
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+document.write(time);
+
+    }
+
+    </script>
+  </body>
+</html>
+
+

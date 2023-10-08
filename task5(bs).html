@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .Button{
+      background-color: #e39f00;
+      color: white;
+    }
+    .state{
+      position: relative;
+    display: table;
+    border-collapse: separate;
+    min-height: 10vh;
+    width: 102%;
+
+    }
+  </style>
+
+  </head>
+  <body >
+    <form >
+      <div  class="container" style="background-color: gray;">
+        <div class="form-group row has-error has-feedback">
+          <label for="F_name" class="col-sm-2 col-form-label">First Name</label>
+          <div class="col-sm-10">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input type="text" class="form-control" style="border-radius: 2px;" id="F_name" placeholder="First Name">
+              <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+              <div class="invalid-feedback" style="color: #8a0505;">
+                Please Supply your first name
+              </div>
+         
+          </div>
+        </div>
+        <div class="form-group row has-error has-feedback" >
+          <label for="L_Name" class="col-sm-2 col-form-label">Last Name</label>
+          <div class="col-sm-10">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input type="text" class="form-control" id="L_Name" placeholder="Last Name">
+              <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+              <div class="invalid-feedback" style="color: #8a0505;">
+                Please Supply your last name
+              </div>
+  
+            
+          </div>
+        </div>
+        <div class="form-group row has-error has-feedback">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+              <div class="invalid-feedback" style="color: #8a0505;">
+                Please Supply your phone number
+              </div>
+          </div>
+        </div>
+        <div class="form-group row has-error has-feedback">
+          <label for="pn" class="col-sm-2 col-form-label">Phone#</label>
+          <div class="col-sm-10">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+             <input type="number" class="form-control" id="pn" placeholder="(845)555-1212">
+             <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+              <div class="invalid-feedback" style="color: #8a0505;">
+                Please Supply your phone number
+              </div>
+          
+          </div>
+        </div>
+        <div class="form-group row has-error has-feedback">
+          <label for="Address" class="col-sm-2 col-form-label">Address</label>
+          <div class="col-sm-10">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+              <input type="text" class="form-control" id="Address" placeholder="Address">
+              <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+              <div class="invalid-feedback" style="color: #8a0505;">
+                Please Supply your streat address
+              </div>
+          </div>
+        </div>
+        <fieldset >
+        <div class="form-group row has-error has-feedback">
+          <label for="City" class="col-sm-2 col-form-label">City</label>
+          <div class="col-sm-10">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+              <input type="text" class="form-control " id="City" placeholder="City" required>
+              
+                <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+              </div>
+                <div class="invalid-feedback" style="color: #8a0505;">
+                  Please Supply your city.
+                </div>
+          </div>
+        </div>
+        
+        <div class="form-group-row">
+          <label  for="state"class="col-sm-2 col-form-label">State</label>
+          <div class="col-sm-10">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+              <select class="custom-select my-1 mr-sm-2 state"    id="inlineFormCustomSelectPref">
+            
+              
+                  <option selected >Please Select Your State</option>
+                  <option value="1">Uttarakhand</option>
+                  <option value="2">Maharashtra</option>
+                  <option value="3">Rajasthan</option>
+                </select>
+              </div>
+              </div>
+            </div>
+            
+     
+          <div class="form-group-row">
+            <label class="col-form-label col-sm-2 pt-0">Do you have a hosting?</label>
+            <div class="col-sm-10">
+              
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                      <label class="form-check-label" for="gridRadios1">
+                        Yes
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                      <label class="form-check-label" for="gridRadios2">
+                        No
+                      </label>
+                    </div>
+            </div>
+          </div>
+          
+        </fieldset>
+  
+        <div class="form-group row mt-5">
+          <label for="pd" class="col-sm-2 col-form-label" >Project Description</label>
+          <div class="col-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+        
+                  <input type="text" class="form-control pt-1" style="height: 20vh;" id="pd" placeholder="Project Description">
+          </div>
+            
+          </div>
+        </div>
+        
+        
+        
+        
+        
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-outline-dark Button" style="margin-left: 20%;" >Send</button>
+          </div>
+        </div>
+      </form>
+      
+      </div>
+     
+  </body>
+</html>

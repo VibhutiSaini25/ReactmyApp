@@ -1,0 +1,32 @@
+h1{
+    color: rgb(255,0,0);
+    text-align:center;
+    text-transform: uppercase;
+    text-indent: 40px;
+    text-decoration: underline dotted 4px green;
+    text-shadow: 3px 5px 0px blue;
+}
+#i1{
+    font-family: cursive;
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+    font-variant: small-caps;
+    cursor: pointer;
+    border: 4px solid yellow;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    padding: 100px 40px 150px 30px;
+    margin: 40px 30px;
+}
+body{
+    /*background-color: #0f0;*/
+    background-image: url ("./image.jpeg") ;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top center;
+    background-size: cover;
+}

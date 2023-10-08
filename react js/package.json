@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@tippyjs/react": "^4.2.6",
+    "date-fns": "^2.30.0",
+    "prop-types": "^15.8.1",
+    "react-color": "^2.19.3"
+  }
+}

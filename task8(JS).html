@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>task8(JS)</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+        
+	</head>
+	<body>
+        <center>
+            <div class="container"  style="background-image: linear-gradient(#eab97a, rgb(235, 127, 208), rgb(151, 83, 176));">
+                <h2 style="color: blue;">Registeration Form</h2>
+                <form action="www.ethnus.com" method="post" id="signup">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="F_name">First Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="F_name" name="name"  />
+                            <span style="color: red;" id="msg">Poor</span>
+                        <small></small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="L_name">Last Name:</label>
+                        </td>
+                        <td>
+
+                            <input type="text" id="L_name" name="L_name"  />
+                            <span style="color: red;" id="msg">Poor</span>
+                        <small></small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">Email:</label>
+
+                        </td>
+                        <td>
+                            <input type="text" id="email" name="email"  />
+                            <span style="color: red;" id="msg">Poor</span>
+                            <small></small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pswd">Password:</label>
+
+                        </td>
+                        <td>
+                            <input type="password" id="pswd" name="pswd"  />
+                            <span style="color: red;" id="msg">Poor</span>
+                            <small></small>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="R_pswd">Re enter Password:</label>
+                            
+
+                        </td>
+                        <td>
+                            
+                        <input type="password" id="R_pswd" name="R_pswd"  />
+                        <span  style="color: red;" id="msg">Poor Or Mismatch</span>
+                        <small></small>
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="gender">Gender:</label>
+
+
+                        </td>
+                        <td>
+                            <label for="male">Male</label>
+                           <input type="radio" name="gender" id="male" value="male">
+                         </br>
+                        <label for="female">Female</label>
+                         <input type="radio" name="gender" id="female"value="female">
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="age">Age:</label>
+
+                        </td>
+                        <td>
+                            <input type=  "number" id="age" name="age"  />
+                            <span  style="color: red;"id="msg">Poor</span>
+                            <small></small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="phn">Phone Number:</label>
+
+                        </td>
+                        <td>
+                                
+                            <input type="number" id="phn" name="phn"  />
+                            <span style="color: red;" id="msg">Poor</span>
+                            <small></small>
+
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="adr">Address:</label>
+
+
+                        </td>
+                        <td>
+
+                            <input type="text" style="height: 10vh;" id="adr" name="adr"/>
+                            <span style="color: red;" id="msg">Poor</span>
+                        <small></small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="state">State:</label>
+
+
+                        </td>
+                        <td>
+                            <input type="text" id="state" name="state"  />
+                            <span style="color: red;" id="msg">Poor</span>
+                        <small></small>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="country">Country</label>
+
+
+                        </td>
+                        <td>
+                            <select id="country" name="country" >
+                                <option value="select country">Choose your country</option>
+                                <option value="India">India</option>
+                                <option value="USA">USA</option>
+                                <option value="France">France</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Mexico">Mexico</option>
+                        
+                              </select>
+
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="lang">Language:</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="English" value="English"/>
+                            <label for="English">English</label>
+                            <input type="checkbox" name="Hindi" value="Hindi"/>
+                            <label for="Hindi">Hindi</label>
+                            <input type="checkbox" name="Kannada" value="Kannada"/>
+                            <label for="Kannada">Kannada</label>
+                            <input type="checkbox" name="Telugu" value="Telugu"/>
+                            <label for="Telugu">Telugu</label>
+
+                        </td>
+                    </tr>
+                
+
+                </table>
+                <table style="margin-right: 10%;">
+                    <tr>
+                        <td>
+                            
+                        <input type="checkbox" name="English" value="English"/>
+
+                            <label for="English">Hereby I declare all the given details are true</label>
+                        </td>
+                    </tr>
+                </table>
+                
+            
+
+                
+            
+            <p style="margin-left: 30%;">Log into <a href="www.ethnus.com">Ethnus</a> website<p>
+                    
+                        <button type="submit" class="full me-1" style="background-color: red; color: white; border-radius: 20px;" >Register</button>
+                    
+                </form>
+            </div>
+            <script>
+       function strengthChecker()
+        {
+           var pwd = document.getElementById("F_name").value;
+           if(pwd.length == 0)
+           {
+            document.getElementById("msg").innerHTML = "poor";
+           }
+
+
+           else if(pwd.length < 5)
+           {
+            document.getElementById("msg").innerHTML = "Weak";
+           }
+
+
+           else
+           {
+            document.getElementById("msg").innerHTML = "Strong";
+           }
+        }
+       
+            </script>
+
+        </center>
+		
+	</body>
+</html>

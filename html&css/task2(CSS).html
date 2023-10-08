@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        ul{
+            list-style-type: none;
+            margin:0;
+            padding: 0;
+            overflow: hidden;
+            background-color: lightgray;
+            
+        }
+        li {
+            float: left;
+            border-right:1px  solid blue;
+
+        }
+        li a
+        {
+            display: block;
+            color:blue;
+            text-align: center;
+            padding:14px 16px;
+            text-decoration:none;
+        }
+        li a :hover:not(.active)
+        {
+            background-color: black;
+
+        }
+        .active{
+            background-color: darkgrey;
+            color: white;
+        }
+
+
+        </style>
+        
+    </head>
+    <body>
+        <h2>Horizontal navigation bar</h2>
+        <ul>
+            <li><a class="active" href=#home>Home</a></li>
+            <li><a href="#java">Java</a></li>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+
+        </ul>
+        
+    </body>
+</html>

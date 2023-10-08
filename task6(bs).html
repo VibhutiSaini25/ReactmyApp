@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task6(BS)</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"cc/>
+      <style>
+        .dis{
+        display:flex;
+      }
+      .dis1{
+        margin-left: 25%;;
+      }
+
+      </style>
+      
+    
+    </head>
+    <body class="bg-light">
+        <div class="container bg-light text-center" style="max-width:40%;">
+            <center>
+                <form>
+                    <div class="form-row ">
+                      <div class="col-md-6 mb-3 ">
+                        <label for="validationServer01" class="dis">Name</label>
+                        <input type="text" style="width:150%;" class="form-control is-invalid" id="validationServer01" required>
+                        <div class="invalid-feedback">
+                          Name is required
+                        </div>
+                      </div>
+                      
+                   
+                    <div class="form-row">
+                      <div class="col-md-6 me-1 mb-3">
+                        <label for="validationServer03" class="dis">Email</label>
+                        <input type="email"  style="width: 150% "class="form-control is-invalid " id="validationServer03"  required>
+                        <div class="invalid-feedback">
+                          Email is required
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="validationServer04" class="dis">Password</label>
+                        <input type="password"  style="width:150%;" class="form-control is-invalid" id="validationServer04"  required>
+                        <div class="invalid-feedback">
+                          Password is required
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="validationServer05" class="dis">Hobbies</label>
+                        <input type="number" style="width:150%;" class="form-control" required>
+                       
+                      </div>
+                    </div>
+                   
+                          
+                    <button class="btn btn-danger me-1 dis1" style="width:75%;" type="submit">Submit </button>
+
+                  
+                  </form>
+    
+            </center>
+
+        </div>
+       
+        
+    </body>
+</html>
