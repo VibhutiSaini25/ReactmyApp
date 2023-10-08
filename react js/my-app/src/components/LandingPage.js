@@ -22,9 +22,7 @@ function LandingPage()
         return data.map((val)=>{
             return( 
             <table>
-                
-                    
-               
+              
                     <tbody>
                        <td>
                         {val.id}

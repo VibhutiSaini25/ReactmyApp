@@ -20,35 +20,56 @@ function FetchData()
 
     const ListNames = () =>{
         return data.map((val)=>{
-            return( 
-            <table>
-                
+            return(
+              
+                    <table>
+            
                     
                
-                    <tbody>
-                       <td>
-                        {val.id}
-                    </td>
-                    <td>
-                        {val.name}
-                    </td>
-                    <td>
-                        {val.username}
+            <tbody>
+               <td>
+                {val.id}
+            </td>
+            <td>
+                {val.name}
+            </td>
+            <td>
+                {val.username}
 
-                    </td>
-                    <td>
-                        {val.address.city}
+            </td>
+            <td>
+                {val.address.city}
 
-                    </td>
-             
-                    </tbody>
-                    </table>
-              
-        )
+            </td>
+            <td>
+                {val.address.zipcode}
+            </td>
+     
+            <td>
+                {val.website}
+            </td>
+            <td>
+                {val.phone}
+            </td>
+     
+            <td>
+                {val.company.name}
+            </td>
+           
+     
           
-                
+            </tbody>
+            </table>
+             
+      
+)
+  
+        
+    
+})
+
+           
             
-        })
     }
     return(
         <div>
